@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEKOLA - Tentang Kami</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/tailwind.css">
+    <link rel="stylesheet" href="/src/css/custom.css">
+</head>
+<body>
+    <!-- START : Back to top -->
+    <top-btn></top-btn>
+    <!-- END : Back to top -->
+    <!-- START : Header -->
+    <header class="relative">
+        <section class="absolute inset-0 w-full z-10">
+            <div id="header-layer" class="w-full h-full absolute inset-0 bg-white bg-opacity-50"></div>
+            <div id="img-section" class="overflow-hidden">
+                <img class="w-full" src="/src/img/pages/tentang-kami.png" alt="">
+            </div>
+        </section>
+        <!-- START : Navbar -->
+        <navbar-element></navbar-element> 
+        <!-- END : Navbar -->
+    </header>
+    <!-- END : Header -->
+    <!-- START : Main -->
+    <div class="top-32 md:top-40 w-full relative z-10">
+        <!-- START : Heading -->
+        <div class="max-w-screen-container mx-auto text-center space-y-2">
+            <h1 id="heading-text" class="font-bold text-xl md:text-2xl">Tentang Kami</h1>
+            <p class="text-sm max-w-lg leading-relaxed px-5 mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus felis a feugiat justo. AdipiscingLorem ipsum dolor sit amet</p>
+        </div>
+        <!-- END : Heading -->
+        <!-- <div class="max-w-screen-container mx-auto bg-white text-center rounded-md py-10 mt-10 border-b">
+            <h3 class="uppercase text-green-500 font-bold text-sm md:text-base">Sambutan Kepala Sekolah</h3>
+            <h1 id="heading-text" class="font-bold text-xl md:text-2xl">Lorem ipsum dolor sit amet, <br />consectetur adipiscing elit.</h1>
+            <p class="text-sm max-w-lg leading-relaxed px-5 mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus felis a feugiat justo. AdipiscingLorem ipsum dolor sit amet, consectetur adipiscing elit. Risus felis a feugiat justo. Adipiscing</p>
+        </div> -->
+        <div class="max-w-screen-container mx-auto flex justify-center flex-col items-center py-10 md:border bg-white mt-10 mb-28">
+            <div class="flex flex-col space-y-3 text-center">
+                <h3 class="uppercase text-green-500 font-bold text-sm md:text-base">Sambutan Kepala Sekolah</h3>
+                <h1 id="heading-text" class="font-bold text-xl md:text-2xl">Lorem ipsum dolor sit amet, <br />consectetur adipiscing elit.</h1>
+                <p class="text-sm max-w-lg leading-relaxed px-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus felis a feugiat justo. AdipiscingLorem ipsum dolor sit amet, consectetur adipiscing elit. Risus felis a feugiat justo. Adipiscing</p>
+                <div class="flex justify-center space-x-5 pt-10">
+                    <img class="w-20 md:w-auto" src="/src/img/principal.png" alt="">
+                    <img class="w-20 md:w-auto" src="/src/img/signature.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="max-w-screen-container mx-auto flex items-center justify-center flex-wrap w-full md:pb-28 px-5 md:px-0">
+            <div class="w-full md:w-1/2 space-y-3">
+                <h3 class="uppercase text-green-500 font-bold text-sm md:text-base">Sejarah SMK Muhamka</h3>
+                <h1 id="heading-text" class="font-bold text-xl md:text-2xl">Lorem ipsum dolor sit amet, <br />consectetur adipiscing elit.</h1>
+                <p class="text-sm leading-relaxed md:pr-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi repellat quas voluptas deleniti totam architecto natus dicta accusamus molestiae expedita pariatur praesentium fugiat reiciendis iste, dolor ipsam. A hic quidem nesciunt mollitia in earum ullam repellendus nihil, rerum nisi fuga ea ex aspernatur adipisci sed voluptates illo vel aliquid voluptatem.</p>
+                <!-- <ul class="space-y-3">
+                    <li class="flex space-x-3">
+                        <span class="text-green-500 iconify text-2xl" data-icon="fluent:location-12-regular"></span>
+                        <span class="text-sm">Lokasi Strategis</span>
+                    </li>
+                    <li class="flex space-x-3">
+                        <span class="text-green-500 iconify text-2xl" data-icon="ant-design:safety-certificate-outlined"></span>
+                        <span class="text-sm">Lingkungan Aman</span>
+                    </li>
+                    <li class="flex space-x-3">
+                        <span class="text-green-500 iconify text-2xl" data-icon="fluent:location-12-regular"></span>
+                        <span class="text-sm">Lingkungan Aman</span>
+                    </li>
+                </ul> -->
+            </div>
+            <div class="w-full md:w-1/2 my-20 md:my-0">
+                <img src="/src/img/school.png" alt="">
+            </div>
+        </div>
+        <!-- START : Footer -->
+        <footer-element></footer-element>
+    </div>
+    <!-- START : Main -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <script src="/src/js/app.js" type="module"></script>
+</body>
+</html>

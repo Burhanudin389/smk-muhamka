@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEKOLA - Artikel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/tailwind.css">
+    <link rel="stylesheet" href="/src/css/custom.css">
+</head>
+<body>
+    <!-- START : Back to top -->
+    <top-btn></top-btn>
+    <!-- END : Back to top -->
+    <!-- START : Header -->
+    <header class="relative">
+        <section class="absolute inset-0 w-full z-10">
+            <div id="header-layer" class="w-full h-full absolute inset-0 bg-white bg-opacity-75"></div>
+            <div id="img-section" class="overflow-hidden">
+                <img class="w-full" src="/src/img/pages/artikel.png" alt="">
+            </div>
+        </section>
+        <!-- START : Navbar -->
+        <navbar-element></navbar-element> 
+        <!-- END : Navbar -->
+    </header>
+    <!-- END : Header -->
+    <!-- START : Main -->
+    <div class="top-32 md:top-40 w-full h-screen relative z-10">
+        <!-- START : Heading -->
+        <div class="max-w-screen-container mx-auto text-center space-y-2">
+            <h1 id="heading-text" class="font-bold text-xl md:text-2xl">Artikel</h1>
+            <p class="text-sm max-w-lg leading-relaxed px-5 mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus felis a feugiat justo. AdipiscingLorem ipsum dolor sit amet</p>
+        </div>
+        <!-- END : Heading -->
+        <div class="max-w-screen-container mx-auto w-full mt-10">
+            <div class="w-full flex flex-wrap px-5">
+                <div class="w-full lg:w-2/3 h-auto md:h-72 py-3 md:pr-3">
+                    <div class="w-full h-full overflow-hidden relative bg-gray-500 rounded-md">
+                        <img class="w-full transition-all duration-300" src="/src/img/blog.png" alt="">
+                        <div class="absolute flex flex-col justify-end items-start p-5 inset-0 w-full h-full bg-gradient-to-t from-gray-900 to-transparent text-white">
+                            <a href="#" class="flex justify-center items-center text-xs bg-green-500 px-2 py-1 rounded-sm mb-2 hover:bg-green-700 font-semibold text-white uppercase">Prestasi</a>
+                            <a class="hover:underline font-semibold my-1 text-sm md:text-base" href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, dolor.</a>
+                            <p class="text-xs md:text-sm font-light hidden md:block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque est accusamus aperiam ex <a href="#" class="font-semibold">Baca Selengkapnya...</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/3 h-auto md:h-72 py-3">
+                    <div class="w-full h-full overflow-hidden relative bg-gray-500 rounded-md">
+                        <img class="h-full transition-all duration-300" src="/src/img/blog.png" alt="">
+                        <div class="absolute flex flex-col justify-end items-start p-5 inset-0 w-full h-full bg-gradient-to-t from-gray-900 to-transparent text-white">
+                            <a href="#" class="flex justify-center items-center text-xs bg-green-500 px-2 py-1 rounded-sm mb-2 hover:bg-green-700 font-semibold text-white uppercase">Prestasi</a>
+                            <a class="hover:underline font-semibold my-1 text-sm md:text-base" href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                            <p class="text-xs md:text-sm hidden md:block">Lorem ipsum dolor sit amet consectetur adipis, <a href="#" class="font-semibold">Baca Selengkapnya...</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="w-full">
+                <div class="my-10">
+                    <div class="w-full flex flex-wrap justify-center lg:justify-between items-center px-5">
+                        <div class="space-y-3 mb-10 text-center lg:text-left">
+                            <!-- <h3 class="uppercase text-green-500 font-bold text-sm md:text-base">Artikel & Berita</h3> -->
+                            <h1 id="heading-text" class="font-bold text-xl md:text-2xl">Berita Lainnya</h1>
+                            <p class="text-sm max-w-lg leading-relaxed mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus felis a feugiat justo. AdipiscingLorem ipsum dolor sit amet</p>
+                        </div>
+                        <form action="#" class="w-full md:w-1/2 h-14 bg-white relative p-3 rounded-md border lg:border-none">
+                            <input class="placeholder-gray-300 w-full md:max-w-md h-full text-sm pl-3 outline-none bg-transparent" type="text" placeholder="Cari artikel">
+                            <button type="submit" class="rounded-md text-white w-10 md:w-32 h-10 m-2 bg-green-500 hover:bg-green-700 absolute right-0 top-0 text-xs flex justify-center items-center"><span class="hidden md:block">Cari Artikel</span><span class="iconify text-md lg:ml-1" data-icon="dashicons:search"></span></button>
+                        </form>
+                    </div>
+                    <!-- CARD -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-5 px-5">
+                        <article-card></article-card>
+                        <article-card></article-card>
+                        <article-card></article-card>
+                        <article-card></article-card>
+                        <article-card></article-card>
+                        <article-card></article-card>
+                    </div>
+                    <div class="flex justify-center mt-20">
+                        <button type="submit" class="w-32 rounded-md text-white h-10 m-2 bg-green-500 hover:bg-green-700 text-xs flex justify-center items-center">Muat artikel<span class="iconify text-md ml-1" data-icon="pepicons:reload"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- START : Footer -->
+        <footer-element></footer-element>
+        <!-- END : Footer -->
+    </div>
+    <!-- END : Main -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <script src="/src/js/app.js" type="module"></script>
+</body>
+</html>

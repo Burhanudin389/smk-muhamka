@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEKOLA - Kontak</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/tailwind.css">
+    <link rel="stylesheet" href="/src/css/custom.css">
+</head>
+<body>
+    <!-- START : Back to top -->
+    <top-btn></top-btn>
+    <!-- END : Back to top -->
+    <!-- START : Header -->
+    <header class="relative">
+        <section class="absolute inset-0 w-full z-10">
+            <div id="header-layer" class="w-full h-full absolute inset-0 bg-white bg-opacity-50"></div>
+            <div id="img-section" class="overflow-hidden">
+                <img class="w-full" src="/src/img/pages/kontak.png" alt="">
+            </div>
+        </section>
+        <!-- START : Navbar -->
+        <navbar-element></navbar-element> 
+        <!-- END : Navbar -->
+    </header>
+    <!-- END : Header -->
+    <!-- START : Main -->
+    <div class="top-32 md:top-40 w-full h-screen relative z-10">
+        <!-- START : Heading -->
+        <div class="max-w-screen-container mx-auto text-center space-y-2">
+            <h1 id="heading-text" class="font-bold text-xl md:text-2xl">Kontak kami</h1>
+            <p class="text-sm max-w-lg leading-relaxed px-5 mx-auto">Dapatkan informasi tentang SEKOLA</p>
+        </div>
+        <!-- END : Heading -->
+        <div class="max-w-screen-container mx-auto w-full mt-10 px-5">
+            <section class="grid grid-cols-1 lg:grid-cols-2 gap-5 w-full h-auto bg-white rounded-md mb-10 shadow-md">
+                <div class="w-full rounded-md hidden lg:block overflow-hidden">
+                    <img src="/src/img/why-img-1.png" alt="" class="h-full min-w-min">
+                </div>
+                <div class="p-5 md:p-10">
+                    <form action="#" class="w-full rounded-md py-3 space-y-7">
+                        <div class="w-full">
+                            <label for="username" class="font-semibold text-sm text-gray-700">Nama</label>
+                            <input id="username" class="focus:ring-2 focus:ring-gray-200 w-full h-12 outline-none rounded-md text-sm px-3 border shadow-sm mt-2" type="text" placeholder="Nama lengkap">
+                        </div>
+                        <div class="w-full">
+                            <label for="nomorhp" class="font-semibold text-sm text-gray-700">Nomor HP</label>
+                            <input id="nomorhp" class="focus:ring-2 focus:ring-gray-200 w-full h-12 outline-none rounded-md text-sm px-3 border shadow-sm mt-2" type="text" placeholder="Nomor Handphone">
+                        </div>
+                        <div class="w-full">
+                            <label for="email" class="font-semibold text-sm text-gray-700">E-mail</label>
+                            <input id="email" class="focus:ring-2 focus:ring-gray-200 w-full h-12 outline-none rounded-md text-sm px-3 border shadow-sm mt-2" type="text" placeholder="Alamat Email">
+                        </div>
+                        <div class="w-full">
+                            <label for="alamat" class="font-semibold text-sm text-gray-700">Alamat</label>
+                            <textarea id="alamat" class="w-full h-32 outline-none rounded-md text-sm p-3 border shadow-sm mt-2" placeholder="Alamat anda"></textarea>
+                        </div>
+                        <button type="submit" class="w-40 py-3 rounded-md text-sm flex justify-center space-x-2 items-center bg-green-500 hover:bg-green-700 text-white transition-all duration-300 focus:ring-2 focus:ring-green-300">
+                            <span>Kirim pesan</span><span class="iconify" data-icon="cil:paper-plane"></span>
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </div>
+        <maps-element></maps-element>
+        <!-- START : Footer -->
+        <footer-element></footer-element>
+        <!-- END : Footer -->
+    </div>
+    <!-- END : Main -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <script src="/src/js/app.js" type="module"></script>
+</body>
+</html>

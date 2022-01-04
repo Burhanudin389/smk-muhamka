@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEKOLA - Beranda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/tailwind.css">
+    <link rel="stylesheet" href="/src/css/custom.css">
+</head>
+<body>
+    <!-- START : Back to top -->
+    <top-btn></top-btn>
+    <!-- END : Back to top -->
+    <!-- START : Hedaer -->
+    <header id="header" class="relative overflow-hidden">
+        <div id="layer" class="absolute inset-0 w-full h-screen bg-white bg-opacity-75 z-0"></div>
+        <!-- <div class="absolute bottom-0 w-full h-28 bg-gradient-to-t from-white to-transparent"></div> -->
+        <!-- START : Navbar -->
+        <navbar-element></navbar-element>
+        <!-- END : Navbar --> 
+        <!-- START : Jumbotroon -->
+        <section id="jumbotroon">
+            <div id="jumbotroon-content" class="w-full">
+                <div class="max-w-screen-container text-center mx-auto h-screen flex flex-col justify-center items-center relative z-10 space-y-3">
+                    <h1 id="banner-heading" class="text-2xl md:text-3xl font-bold text-gray-900"></h1>
+                    <p id="banner-text" class="text-center text-sm"></p>
+                    <button class="flex items-center shadow-lg bg-green-500 text-white border-green-500 transition-all duration-300 hover:bg-green-700 px-3.5 py-2.5 space-x-2 rounded-md focus:ring-2 focus:ring-green-300">
+                        <span class="text-xs font-medium">Tentang kami</span>
+                        <span class="iconify" data-icon="bi:arrow-right"></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- END : Jumbotroon -->
+    </header>
+    <!-- END : Header -->
+    <!-- START : About -->
+    <section id="about" class="overflow-hidden">
+        <!-- START : About sekola -->
+        <div class="max-w-screen-container mx-auto flex justify-center py-16 space-x-2 md:space-x-10">
+            <div class="text-center" data-aos="zoom-in" data-aos-delay="100">
+                <p class="text-xl md:text-2xl font-bold">1282</p>
+                <p class="text-xs text-gray-500">Siswa</p>
+            </div>
+            <div class="text-center" data-aos="zoom-in" data-aos-delay="200">
+                <p class="text-xl md:text-2xl font-bold">100</p>
+                <p class="text-xs text-gray-500">Guru Karyawan</p>
+            </div>
+            <div class="text-center" data-aos="zoom-in" data-aos-delay="300">
+                <p class="text-xl md:text-2xl font-bold">44</p>
+                <p class="text-xs text-gray-500">Jenis Fasilitas</p>
+            </div>
+            <div class="text-center" data-aos="zoom-in" data-aos-delay="400">
+                <p class="text-xl md:text-2xl font-bold">56</p>
+                <p class="text-xs text-gray-500">Total Ruangan</p>
+            </div>
+        </div>
+        <!-- END About sekola -->
+        <!-- START : Sambutan -->
+        <div class="max-w-screen-container mx-auto flex justify-center flex-col items-center pb-20 md:pb-28">
+            <div class="flex flex-col items-center space-y-3 text-center">
+                <h3 class="uppercase text-green-500 font-bold text-sm md:text-base">Sambutan Kepala Sekolah</h3>
+                <h1 id="heading-text" class="font-bold text-lg md:text-xl max-w-xl">Muhammad Rustam Aji, S.Pd</h1>
+                <div>
+                    <p class="text-sm max-w-lg leading-relaxed px-5">Pandemi tidak merubah semangat pelajar Muhamka, mereka tetap menunjukkan prestasinya</p>
+                </div>
+                <div class="flex justify-center items-center space-x-5 pt-10" data-aos="fade-up">
+                    <img class="w-20 md:w-auto" src="/src/img/principal.png" alt="">
+                    <img class="w-20 md:w-auto" src="/src/img/signature.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- END : Sambutan -->
+    </section>
+    <!-- END : About -->
+    <!-- START : Muhamka about -->
+    <section id="about-school" class="overflow-hidden">
+        <div class="max-w-screen-container mx-auto flex items-center justify-center flex-wrap w-full pb-20 md:pb-28 px-5">
+            <div class="w-full lg:w-1/2 space-y-3" data-aos="fade-right">
+                <h3 class="uppercase text-green-500 font-bold text-sm md:text-base">Mengapa Muhamka</h3>
+                <h1 id="heading-text" class="font-bold text-lg md:text-xl">Alasan anda harus memilih SMK Muhamka</h1>
+                <p class="text-sm leading-relaxed md:pr-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore vitae mollitia iusto beatae laborum dicta doloremque libero possimus natus autem.</p>
+                <ul class="space-y-4">
+                    <li class="flex">
+                        <div class="w-5 mr-3">
+                            <span class="text-green-500 iconify text-2xl" data-icon="fluent:location-12-regular"></span>
+                        </div>
+                        <span class="text-sm">Lokasi Strategis</span>
+                    </li>
+                    <li class="flex">
+                        <div class="w-5 mr-3">
+                            <span class="text-green-500 iconify text-xl" data-icon="grommet-icons:achievement"></span>
+                        </div>
+                        <span class="text-sm">Sekolah Berprestasi</span>
+                    </li>
+                    <li class="flex">
+                        <div class="w-5 mr-3">
+                            <span class="text-green-500 iconify text-2xl" data-icon="ant-design:safety-certificate-outlined"></span>
+                        </div>
+                        <span class="text-sm">Lingkungan Aman</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="swiper w-full lg:w-1/2 pt-10 lg:pt-0 my-10 lg:my-0" data-aos="fade-left">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide flex justify-center items-center">
+                        <img class="w-full max-w-lg" src="/src/img/slide/slide-one.svg" alt="tbtbtb">
+                    </div>
+                    <div class="swiper-slide flex justify-center items-center">
+                        <img class="w-full max-w-lg" src="/src/img/school.png" alt="tbbtbt">
+                    </div>
+                    <div class="swiper-slide flex justify-center items-center">
+                        <img class="w-full max-w-lg" src="/src/img/school.png" alt="tbtbtbt">
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- END : Muhamka about -->
+    <!-- START : Artikel -->
+    <section id="article" class="overflow-hidden">
+        <div class="max-w-screen-container mx-auto text-center px-5 mb-28">
+            <div class="space-y-3 mb-10">
+                <h3 class="uppercase text-green-500 font-bold text-sm md:text-base">Artikel & Berita</h3>
+                <h1 id="heading-text" class="font-bold text-lg md:text-xl">Berita terupdate tentang Muhamka</h1>
+            </div>
+            <!-- CARD -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-5">
+                <article-card data-aos="zoom-in" data-aos-delay="100"></article-card>
+                <article-card data-aos="zoom-in" data-aos-delay="150"></article-card>
+                <article-card data-aos="zoom-in" data-aos-delay="200"></article-card>
+                <article-card data-aos="zoom-in" data-aos-delay="250"></article-card>
+                <article-card data-aos="zoom-in" data-aos-delay="300"></article-card>
+                <article-card data-aos="zoom-in" data-aos-delay="350"></article-card>
+            </div>
+            <div class="flex justify-between md:justify-end items-center mt-5">
+                <div class="md:hidden font-semibold text-sm">
+                    Lihat semua artikel
+                </div>
+                <button class="flex items-center shadow-lg bg-green-500 text-white border-green-500 transition-all duration-300 hover:bg-green-700 px-3.5 py-2.5 space-x-2 rounded-md focus:ring-2 focus:ring-green-300">
+                    <span class="text-xs">Semua artikel</span>
+                    <span class="iconify" data-icon="bi:arrow-right"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- END : Artikel -->
+    <!-- START : Artikel -->
+    <section id="partner" class="overflow-hidden">
+        <div class="max-w-screen-container mx-auto text-center px-5 mb-28">
+            <div class="space-y-3 mb-10">
+                <h3 class="uppercase text-green-500 font-bold text-sm md:text-base">Partner</h3>
+                <h1 id="heading-text" class="font-bold text-lg md:text-xl">Partner Sekola dengan berbagai perusahaan besar</h1>
+            </div>
+            <div class="flex justify-center items-center space-x-5 md:space-x-8">
+                <div class="w-20 md:w-24" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="/src/img/partner/panasonic.png" alt="">
+                </div>
+                <div class="w-20 md:w-24" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="/src/img/partner/telkom.png" alt="">
+                </div>
+                <div class="w-20 md:w-24" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="/src/img/partner/daihatsu.png" alt="">
+                </div>
+                <div class="w-16 md:w-24" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="/src/img/partner/toyota.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END : Partner -->
+    <!-- START : Location -->
+    <maps-element></maps-element>
+    <!-- END : Location -->
+    <!-- START : Footer -->
+    <footer-element></footer-element>
+    <!-- END : Footer -->
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <script src="/src/js/app.js" type="module"></script>
+</body>
+</html>
