@@ -19,7 +19,7 @@ class Navbar extends HTMLElement {
                         <li id="dropdown" class="relative text-center lg:text-left w-full lg:w-auto px-5 lg:px-0">
                             <a id="dropdown-btn" onclick="event.preventDefault() || event.stopPropagation()" class="transition-all hover:text-gray-500 flex justify-center items-center" href="/src/pages/galeri.html">Guru & siswa<span class="iconify ml-1" data-icon="akar-icons:chevron-down"></span></a>
                             <div id="dropdown-content" class="relative lg:absolute lg:top-full left-0 w-full lg:w-customDropdown h-auto bg-white rounded-md shadow-lg mt-5 lg:mt-10 border hidden z-20">
-                                <ul class="flex flex-wrap items-start text-gray-700 p-8 space-y-8 lg:space-y-0">
+                                <ul class="flex flex-wrap items-start text-gray-700 p-5 lg:8 space-y-8 lg:space-y-0">
                                     <li class="w-full lg:w-1/2">
                                         <a href="#" class="flex items-center dropdown-heading">
                                             <img class="w-8 lg:w-10" src="/src/img/icon/achievement.svg" alt="Prestasi">
