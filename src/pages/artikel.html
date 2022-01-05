@@ -19,8 +19,8 @@
     <!-- START : Header -->
     <header class="relative">
         <section class="absolute inset-0 w-full z-10">
-            <div id="header-layer" class="w-full h-full absolute inset-0 bg-white bg-opacity-75"></div>
-            <div id="img-section" class="overflow-hidden">
+            <div id="header-layer" class="w-full h-full absolute inset-0 bg-white bg-opacity-75 z-20"></div>
+            <div id="img-section" class="overflow-hidden relative z-10">
                 <img class="w-full" src="/src/img/pages/artikel.png" alt="">
             </div>
         </section>
@@ -38,40 +38,17 @@
         </div>
         <!-- END : Heading -->
         <div class="max-w-screen-container mx-auto w-full mt-10">
-            <div class="w-full flex flex-wrap px-5">
-                <div class="w-full lg:w-2/3 h-auto md:h-72 py-3 md:pr-3">
-                    <div class="w-full h-full overflow-hidden relative bg-gray-500 rounded-md">
-                        <img class="w-full transition-all duration-300" src="/src/img/blog.png" alt="">
-                        <div class="absolute flex flex-col justify-end items-start p-5 inset-0 w-full h-full bg-gradient-to-t from-gray-900 to-transparent text-white">
-                            <a href="#" class="flex justify-center items-center text-xs bg-green-500 px-2 py-1 rounded-sm mb-2 hover:bg-green-700 font-semibold text-white uppercase">Prestasi</a>
-                            <a class="hover:underline font-semibold my-1 text-sm md:text-base" href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, dolor.</a>
-                            <p class="text-xs md:text-sm font-light hidden md:block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque est accusamus aperiam ex <a href="#" class="font-semibold">Baca Selengkapnya...</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-full lg:w-1/3 h-auto md:h-72 py-3">
-                    <div class="w-full h-full overflow-hidden relative bg-gray-500 rounded-md">
-                        <img class="h-full transition-all duration-300" src="/src/img/blog.png" alt="">
-                        <div class="absolute flex flex-col justify-end items-start p-5 inset-0 w-full h-full bg-gradient-to-t from-gray-900 to-transparent text-white">
-                            <a href="#" class="flex justify-center items-center text-xs bg-green-500 px-2 py-1 rounded-sm mb-2 hover:bg-green-700 font-semibold text-white uppercase">Prestasi</a>
-                            <a class="hover:underline font-semibold my-1 text-sm md:text-base" href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
-                            <p class="text-xs md:text-sm hidden md:block">Lorem ipsum dolor sit amet consectetur adipis, <a href="#" class="font-semibold">Baca Selengkapnya...</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
             <div class="w-full">
                 <div class="my-10">
                     <div class="w-full flex flex-wrap justify-center lg:justify-between items-center px-5">
-                        <div class="space-y-3 mb-10 text-center lg:text-left">
-                            <!-- <h3 class="uppercase text-green-500 font-bold text-sm md:text-base">Artikel & Berita</h3> -->
-                            <h1 id="heading-text" class="font-bold text-xl md:text-2xl">Berita Lainnya</h1>
-                            <p class="text-sm max-w-lg leading-relaxed mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus felis a feugiat justo. AdipiscingLorem ipsum dolor sit amet</p>
+                        <div class="text-center hidden lg:block lg:text-left">
+                            <h3 class="uppercase text-green-500 font-bold text-sm md:text-base">Artikel & Berita</h3>
                         </div>
-                        <form action="#" class="w-full md:w-1/2 h-14 bg-white relative p-3 rounded-md border lg:border-none">
-                            <input class="placeholder-gray-300 w-full md:max-w-md h-full text-sm pl-3 outline-none bg-transparent" type="text" placeholder="Cari artikel">
-                            <button type="submit" class="rounded-md text-white w-10 md:w-32 h-10 m-2 bg-green-500 hover:bg-green-700 absolute right-0 top-0 text-xs flex justify-center items-center"><span class="hidden md:block">Cari Artikel</span><span class="iconify text-md lg:ml-1" data-icon="dashicons:search"></span></button>
+                        <form action="#" class="w-full md:w-2/5 h-14 bg-white relative p-3 rounded-md">
+                            <input required type="text" class="w-full placeholder-gray-500 md:max-w-md h-full text-xs pl-3 outline-none bg-transparent" placeholder="Cari artikel">
+                            <button class="font-semibold rounded-md text-white w-10 h-10 m-2 bg-green-500 absolute right-0 top-0 transition-all duration-300 hover:bg-green-700 focus:ring-2 focus:ring-green-300 flex justify-center items-center">
+                                <span class="iconify" data-icon="bx:bx-search-alt-2"></span>
+                            </button>
                         </form>
                     </div>
                     <!-- CARD -->

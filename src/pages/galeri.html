@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
     <link rel="stylesheet" href="/public/css/tailwind.css">
     <link rel="stylesheet" href="/src/css/custom.css">
 </head>
@@ -38,63 +39,139 @@
         </div>
         <!-- END : Heading -->
         <div class="max-w-screen-container mx-auto w-full my-10">
-            <div class="w-full flex flex-wrap px-5">
+            <div class="galery-wrapper w-full px-5 grid gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 <!-- Single card galery -->
-                <div class="w-full lg:w-2/3 h-auto md:h-72">
-                    <div class="w-full h-full overflow-hidden relative bg-gray-500">
-                        <div id="card-galery-overlay" class="absolute flex flex-col justify-end items-start p-5 inset-0 w-full h-full bg-gradient-to-t from-gray-900 to-transparent text-white">
-                            <a href="#" class="flex justify-center items-center text-xs bg-green-500 px-2 py-1 rounded-sm mb-2 hover:bg-green-700 font-semibold text-white uppercase">Prestasi</a>
-                            <a class="font-semibold my-1">Lomba</a>
-                        </div>
-                        <img class="w-full transition-all duration-300" src="/src/img/blog.png" alt="">
-                    </div>
+                <div class="galery-item rounded-md overflow-hidden">
+                    <a data-fancybox="gallery-a" href="https://lipsum.app/id/60/1800x1200" class="w-full h-full overflow-hidden relative bg-gray-500">
+                        <img class="w-full transition-all duration-300 transform hover:scale-110 z-0" src="https://lipsum.app/id/60/1800x1200" alt="">
+                    </a>
                 </div>
                 <!-- Single card galery -->
-                <div class="w-full lg:w-1/3 h-auto md:h-72">
-                    <div class="w-full h-full overflow-hidden relative bg-gray-500">
-                        <div id="card-galery-overlay" class="absolute flex flex-col justify-end items-start p-5 inset-0 w-full h-full bg-gradient-to-t from-gray-900 to-transparent text-white">
-                            <a href="#" class="flex justify-center items-center text-xs bg-green-500 px-2 py-1 rounded-sm mb-2 hover:bg-green-700 font-semibold text-white uppercase">Prestasi</a>
-                            <p class="font-semibold my-1">Lomba</p>
-                        </div>
-                        <img class="h-full transition-all duration-300" src="/src/img/blog.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="w-full flex flex-wrap px-5">
-                <!-- Single card galery -->
-                <div class="w-full lg:w-1/3 h-auto md:h-72">
-                    <div class="w-full h-full overflow-hidden relative bg-gray-500">
-                        <div id="card-galery-overlay" class="absolute flex flex-col justify-end items-start p-5 inset-0 w-full h-full bg-gradient-to-t from-gray-900 to-transparent text-white">
-                            <a href="#" class="flex justify-center items-center text-xs bg-green-500 px-2 py-1 rounded-sm mb-2 hover:bg-green-700 font-semibold text-white uppercase">Prestasi</a>
-                            <a class="font-semibold my-1">Lomba</a>
-                        </div>
-                        <img class="w-full transition-all duration-300" src="/src/img/blog.png" alt="">
-                    </div>
+                <div class="galery-item rounded-md overflow-hidden">
+                    <a data-fancybox="gallery-b" href="https://lipsum.app/id/60/1800x1200" class="w-full h-full overflow-hidden relative bg-gray-500">
+                        <img class="h-full transition-all duration-300 transform hover:scale-110 z-0" src="https://lipsum.app/id/60/1800x1200" alt="">
+                    </a>
                 </div>
                 <!-- Single card galery -->
-                <div class="w-full lg:w-1/3 h-auto md:h-72">
-                    <div class="w-full h-full overflow-hidden relative bg-gray-500">
-                        <div id="card-galery-overlay" class="absolute flex flex-col justify-end items-start p-5 inset-0 w-full h-full bg-gradient-to-t from-gray-900 to-transparent text-white">
-                            <a href="#" class="flex justify-center items-center text-xs bg-green-500 px-2 py-1 rounded-sm mb-2 hover:bg-green-700 font-semibold text-white uppercase">Prestasi</a>
-                            <p class="font-semibold my-1">Lomba</p>
-                        </div>
-                        <img class="h-full transition-all duration-300" src="/src/img/blog.png" alt="">
-                    </div>
+                <div class="galery-item rounded-md overflow-hidden">
+                    <a data-fancybox="gallery-c" href="https://lipsum.app/id/60/1800x1200" class="w-full h-full overflow-hidden relative bg-gray-500">
+                        <img class="h-full transition-all duration-300 transform hover:scale-110 z-0" src="https://lipsum.app/id/60/1800x1200" alt="">
+                    </a>
                 </div>
                 <!-- Single card galery -->
-                <div class="w-full lg:w-1/3 h-auto md:h-72">
-                    <div class="w-full h-full overflow-hidden relative bg-gray-500">
-                        <div id="card-galery-overlay" class="absolute flex flex-col justify-end items-start p-5 inset-0 w-full h-full bg-gradient-to-t from-gray-900 to-transparent text-white">
-                            <a href="#" class="flex justify-center items-center text-xs bg-green-500 px-2 py-1 rounded-sm mb-2 hover:bg-green-700 font-semibold text-white uppercase">Prestasi</a>
-                            <p class="font-semibold my-1">Lomba</p>
-                        </div>
-                        <img class="h-full transition-all duration-300" src="/src/img/blog.png" alt="">
-                    </div>
+                <div class="galery-item rounded-md overflow-hidden">
+                    <a data-fancybox="gallery-d" href="https://lipsum.app/id/60/1800x1200" class="w-full h-full overflow-hidden relative bg-gray-500">
+                        <img class="w-full transition-all duration-300 transform hover:scale-110 z-0" src="https://lipsum.app/id/60/1800x1200" alt="">
+                    </a>
+                </div>
+                <!-- Single card galery -->
+                <div class="galery-item rounded-md overflow-hidden">
+                    <a data-fancybox="gallery-e" href="https://lipsum.app/id/60/1800x1200" class="w-full h-full overflow-hidden relative bg-gray-500">
+                        <img class="w-full transition-all duration-300 transform hover:scale-110 z-0" src="https://lipsum.app/id/60/1800x1200" alt="">
+                    </a>
+                </div>
+                <!-- Single card galery -->
+                <div class="galery-item rounded-md overflow-hidden">
+                    <a data-fancybox="gallery-f" href="https://lipsum.app/id/60/1800x1200" class="w-full h-full overflow-hidden relative bg-gray-500">
+                        <img class="w-full transition-all duration-300 transform hover:scale-110 z-0" src="https://lipsum.app/id/60/1800x1200" alt="">
+                    </a>
+                </div>
+                <!-- Single card galery -->
+                <div class="galery-item rounded-md overflow-hidden">
+                    <a data-fancybox="gallery-g" href="https://lipsum.app/id/60/1800x1200" class="w-full h-full overflow-hidden relative bg-gray-500">
+                        <img class="w-full transition-all duration-300 transform hover:scale-110 z-0" src="https://lipsum.app/id/60/1800x1200" alt="">
+                    </a>
                 </div>
             </div>
-            
-            
         </div>
+
+        <!-- EXAMPLE Gallery Fancybox -->
+        <!-- A ITEM -->
+        <div class="hidden">
+            <a data-fancybox="gallery-a" href="https://lipsum.app/id/61/1800x1200">
+              <img class="rounded" src="https://lipsum.app/id/61/120x80" />
+            </a>
+            <a data-fancybox="gallery-a" href="https://lipsum.app/id/62/1800x1200">
+              <img class="rounded" src="https://lipsum.app/id/62/120x80" />
+            </a>
+            <a data-fancybox="gallery-a" href="https://lipsum.app/id/63/1800x1200">
+              <img class="rounded" src="https://lipsum.app/id/63/120x80" />
+            </a>
+        </div>
+        <!-- B ITEM -->
+        <div class="hidden">
+            <a data-fancybox="gallery-b" href="https://lipsum.app/id/61/1800x1200">
+              <img class="rounded" src="https://lipsum.app/id/61/120x80" />
+            </a>
+            <a data-fancybox="gallery-b" href="https://lipsum.app/id/62/1800x1200">
+              <img class="rounded" src="https://lipsum.app/id/62/120x80" />
+            </a>
+            <a data-fancybox="gallery-b" href="https://lipsum.app/id/63/1800x1200">
+              <img class="rounded" src="https://lipsum.app/id/63/120x80" />
+            </a>
+        </div>
+        <!-- C ITEM -->
+        <div class="hidden">
+            <a data-fancybox="gallery-c" href="https://lipsum.app/id/61/1800x1200">
+              <img class="rounded" src="https://lipsum.app/id/61/120x80" />
+            </a>
+            <a data-fancybox="gallery-c" href="https://lipsum.app/id/62/1800x1200">
+              <img class="rounded" src="https://lipsum.app/id/62/120x80" />
+            </a>
+            <a data-fancybox="gallery-c" href="https://lipsum.app/id/63/1800x1200">
+              <img class="rounded" src="https://lipsum.app/id/63/120x80" />
+            </a>
+        </div>
+        <!-- C ITEM -->
+        <div class="hidden">
+            <a data-fancybox="gallery-d" href="https://lipsum.app/id/61/1800x1200">
+              <img class="rounded" src="https://lipsum.app/id/61/120x80" />
+            </a>
+            <a data-fancybox="gallery-d" href="https://lipsum.app/id/62/1800x1200">
+              <img class="rounded" src="https://lipsum.app/id/62/120x80" />
+            </a>
+            <a data-fancybox="gallery-d" href="https://lipsum.app/id/63/1800x1200">
+              <img class="rounded" src="https://lipsum.app/id/63/120x80" />
+            </a>
+        </div>
+        <!-- C ITEM -->
+        <div class="hidden">
+            <a data-fancybox="gallery-e" href="https://lipsum.app/id/61/1800x1200">
+              <img class="rounded" src="https://lipsum.app/id/61/120x80" />
+            </a>
+            <a data-fancybox="gallery-e" href="https://lipsum.app/id/62/1800x1200">
+              <img class="rounded" src="https://lipsum.app/id/62/120x80" />
+            </a>
+            <a data-fancybox="gallery-e" href="https://lipsum.app/id/63/1800x1200">
+              <img class="rounded" src="https://lipsum.app/id/63/120x80" />
+            </a>
+        </div>
+        <!-- C ITEM -->
+        <div class="hidden">
+            <a data-fancybox="gallery-f" href="https://lipsum.app/id/61/1800x1200">
+              <img class="rounded" src="https://lipsum.app/id/61/120x80" />
+            </a>
+            <a data-fancybox="gallery-f" href="https://lipsum.app/id/62/1800x1200">
+              <img class="rounded" src="https://lipsum.app/id/62/120x80" />
+            </a>
+            <a data-fancybox="gallery-f" href="https://lipsum.app/id/63/1800x1200">
+              <img class="rounded" src="https://lipsum.app/id/63/120x80" />
+            </a>
+        </div>
+        <!-- C ITEM -->
+        <div class="hidden">
+            <a data-fancybox="gallery-g" href="https://lipsum.app/id/61/1800x1200">
+              <img class="rounded" src="https://lipsum.app/id/61/120x80" />
+            </a>
+            <a data-fancybox="gallery-g" href="https://lipsum.app/id/62/1800x1200">
+              <img class="rounded" src="https://lipsum.app/id/62/120x80" />
+            </a>
+            <a data-fancybox="gallery-g" href="https://lipsum.app/id/63/1800x1200">
+              <img class="rounded" src="https://lipsum.app/id/63/120x80" />
+            </a>
+        </div>
+          
+          
         <!-- START : Footer -->
         <footer-element></footer-element>
         <!-- END : Footer -->
@@ -102,6 +179,7 @@
     <!-- END : Main -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="/src/js/app.js" type="module"></script>
 </body>
 </html>

@@ -26,3 +26,13 @@ body::-webkit-scrollbar-thumb {
 #header-layer {
   height: 922.79px;
 }
+
+@media screen and (min-width: 768px) {
+  /* galery */
+  .galery-wrapper .galery-item:nth-child(1) {
+    grid-column: span 2;
+  }
+  .galery-wrapper .galery-item:nth-child(3) {
+    grid-row: span 2;
+  }
+}

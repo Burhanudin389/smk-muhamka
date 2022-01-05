@@ -7,7 +7,7 @@ class Footer extends HTMLElement {
         this.innerHTML = `
             <footer id="footer" class="relative">
                 <div class="w-full h-auto md:h-40 relative bg-gray-300 overflow-hidden">
-                    <div class="w-full h-full bg-gray-400 absolute inset-0 transform md:translate-x-28 z-0"></div>
+                    <div class="w-full h-full bg-gray-400 absolute inset-0 transform md:translate-x-24 ml-0.5 z-0"></div>
                     <div class="max-w-screen-container mx-auto relative py-10 md:py-0 px-5 z-10 flex flex-wrap items-center h-full space-y-3">
                         <div class="w-full md:w-1/2 mb-5 md:mb-0 lg:pl-10">
                             <h1 class="font-semibold">Subscribe untuk mendapatkan <br> informasi terbaru dari kami</h1>
