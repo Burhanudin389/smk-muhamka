@@ -129,6 +129,6 @@ var swi = new Swiper(".swiper-bg", {
     },
   },
   autoplay: {
-    delay: 1000,
+    delay: 3000,
   }
 });
