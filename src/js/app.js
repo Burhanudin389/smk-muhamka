@@ -117,8 +117,8 @@ const swiper = new Swiper(".swiper-about", {
 });
 
 var swi = new Swiper(".swiper-bg", {
-  grabCursor: true,
   effect: "creative",
+  loop: true,
   creativeEffect: {
     prev: {
       shadow: true,
@@ -129,7 +129,6 @@ var swi = new Swiper(".swiper-bg", {
     },
   },
   autoplay: {
-    delay: 3000,
-  },
-  loop: true
+    delay: 1000,
+  }
 });
