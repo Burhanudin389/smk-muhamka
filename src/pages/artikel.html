@@ -45,8 +45,8 @@
                             <h3 class="uppercase text-green-500 font-bold text-sm md:text-base">Artikel & Berita</h3>
                         </div>
                         <form action="#" class="w-full md:w-2/5 h-14 bg-white relative p-3 rounded-md shadow-lg transition-all duration-300">
-                            <input required type="text" class="w-full placeholder-gray-500 md:max-w-md h-full text-xs pl-3 outline-none bg-transparent" placeholder="Cari artikel">
-                            <button class="font-semibold rounded-md text-white w-10 h-10 m-2 bg-green-500 absolute right-0 top-0 transition-all duration-300 hover:bg-green-700 focus:ring-2 focus:ring-green-300 flex justify-center items-center">
+                            <input id="article-search" type="text" class="w-full placeholder-gray-500 md:max-w-md h-full text-xs pl-3 outline-none bg-transparent" placeholder="Cari artikel">
+                            <button disabled id="article-search-btn" class="font-semibold rounded-md text-white w-10 h-10 m-2 bg-green-500 absolute right-0 top-0 transition-all duration-300 hover:bg-green-700 focus:ring-2 focus:ring-green-300 flex justify-center items-center">
                                 <span class="iconify" data-icon="bx:bx-search-alt-2"></span>
                             </button>
                         </form>
@@ -60,8 +60,11 @@
                         <article-card></article-card>
                         <article-card></article-card>
                     </div>
-                    <div class="flex justify-center mt-20">
-                        <button type="submit" class="w-32 rounded-md text-white h-10 m-2 bg-green-500 hover:bg-green-700 text-xs flex justify-center items-center">Muat artikel<span class="iconify text-md ml-1" data-icon="pepicons:reload"></span></button>
+                    <div class="flex justify-center mt-20 w-full h-10">
+                        <button id="more-article" class="flex items-center justify-center shadow-lg bg-green-500 text-white border-green-500 transition-all duration-300 hover:bg-green-700 w-32 h-10 rounded-md focus:ring-2 focus:ring-green-300">
+                            <span id="reload-text" class="text-xs font-medium">Muat artikel</span>
+                            <span id="reload-icon" class="iconify text-sm font-semibold ml-1" data-icon="zondicons:reload"></span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -73,6 +76,34 @@
     <!-- END : Main -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <script>
+        const moreArticle = document.querySelector('#more-article')
+
+        moreArticle.addEventListener("click", function() {
+            const moreArticleText = moreArticle.querySelector('#reload-text')
+            const moreArticleIcon = moreArticle.querySelector('#reload-icon')
+            moreArticleIcon.classList.add('animate-spin')
+            moreArticleIcon.classList.remove('ml-1')
+            moreArticleText.classList.add("hidden")
+            setTimeout(() => {
+                moreArticleText.classList.remove("hidden")
+                moreArticleIcon.classList.remove('animate-spin')
+                moreArticleIcon.classList.add('ml-1')
+            }, 1000);
+        })
+        
+        const articleSearch = document.querySelector('#article-search')
+        const articleSearchBtn = document.querySelector('#article-search-btn')
+        articleSearch.addEventListener('input', function() {
+            for(let i = 0; i <= articleSearch.value.length; i++) {
+                if(i > 0) {
+                    articleSearchBtn.removeAttribute('disabled')
+                } else {
+                    articleSearchBtn.setAttribute('disabled', 'disabled')
+                }
+            }
+        })
+    </script>
     <script src="/src/js/app.js" type="module"></script>
 </body>
 </html>

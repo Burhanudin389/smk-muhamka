@@ -8,12 +8,13 @@ body::-webkit-scrollbar-thumb {
   background-color: #262626;
   border-radius: 3px;
 }
-#jumbotroon-content {
-  background-image: url(/src/img/muhamka.jpg);
+.slide-bg {
+  background: url(/src/img/muhamka.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  max-height: 768px;
+  max-height: 780px;
+  min-width: 1336px;
 }
 @media screen and (min-width: 1024px) {
   #jumbotroon-content div,
@@ -41,6 +42,13 @@ body::-webkit-scrollbar-thumb {
 .dropdown-heading:hover h3 {
   color: #10B981;
 }
+.dropdown-heading h3, .dropdown-heading span {
+  transition: all 300ms ease;
+}
 .dropdown-heading:hover span {
   color: rgb(199, 199, 199);
 }
+#article-search-btn:disabled {
+  background-color: #ddd;
+  cursor: default;
+};

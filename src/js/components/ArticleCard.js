@@ -5,9 +5,9 @@ class ArticleCard extends HTMLElement {
 
     render() {
         this.innerHTML = `
-        <div class="w-full h-auto text-left rounded-md md:mb-5 border md:border-none overflow-hidden">
-            <a href="/src/pages/detail-artikel.html" class="w-full overflow-hidden"> 
-                <img class="w-full rounded-md transition-all duration-300 transform hover:scale-110" src="/src/img/blog.png" alt="">
+        <div class="w-full h-auto text-left md:mb-5 border md:border-none overflow-hidden">
+            <a href="/src/pages/detail-artikel.html" class="w-full md:h-full md:w-auto overflow-hidden"> 
+                <img class="w-full md:h-auto md:w-full transition-all duration-300 transform hover:scale-110" src="/src/img/blog.png" alt="">
             </a>
             <div class="space-y-2 p-3 md:p-0 md:pr-3">
                 <div class="mt-3">
