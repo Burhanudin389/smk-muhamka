@@ -9,10 +9,6 @@ body::-webkit-scrollbar-thumb {
   border-radius: 3px;
 }
 .slide-bg {
-  background: url(/src/img/muhamka.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
   max-height: 780px;
   min-width: 1336px;
 }
