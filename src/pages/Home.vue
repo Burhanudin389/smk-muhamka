@@ -13,7 +13,9 @@
         </div>
     </header>
     <!-- END : HEADER -->
-    <div class="w-full h-screen px-4"></div>
+    <div class="w-full h-screen px-4">
+        
+    </div>
 </template>
 
 <script>

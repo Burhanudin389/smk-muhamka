@@ -50,20 +50,26 @@
                 <li v-on:click="closeNavbar()">
                     <router-link :class="{ 'text-green-900' : active }" to="/about">Kontak</router-link>
                 </li>
-                <!-- <li class="hidden lg:flex">
-                    <div v-bind:class="{'opacity-0 -z-30': !showModal, 'translate-y-5 md:translate-y-10 opacity-100 z-30': showModal}" class="w-full h-32 transform transition-all duration-300 md:max-w-xl mx-auto bg-white fixed top-0 left-0"></div>
-                    <div v-on:click="closeSearchModal()" v-bind:class="{'opacity-0 -z-30': !showModal, 'z-20 opacity-100': showModal}" class="transition-all duration-300 w-full h-screen bg-black bg-opacity-50 fixed top-0 left-0 p-4"></div>
+                <li class="hidden lg:flex">
+                    <!-- MODAL CLOSER -->
+                    <div v-on:click="closeSearchModal()" v-bind:class="{'opacity-0 z-30 invisible': !showModal, 'z-40 opacity-100': showModal}" class="transition-all duration-300 w-full h-screen bg-black bg-opacity-50 fixed top-0 left-0 p-4"></div>
+                    <!-- MODAL CONTENT -->
+                    <div v-bind:class="{'opacity-0 z-40 invisible': !showModal, 'translate-y-5 md:translate-y-10 opacity-100 z-50': showModal}" class="w-full transition-all duration-300 md:max-w-xl fixed top-0 left-1/2 transform -translate-x-1/2 px-4">
+                        <div class="w-full bg-white p-4 rounded-md">
+
+                        </div>
+                    </div>
                     <button v-on:click="openSearchModal()" class="w-10 h-10 flex items-center justify-center rounded-full transition-all duration-300 bg-slate-200 hover:bg-slate-300 hover:shadow-lg focus:bg-slate-400 focus:ring-2 focus:ring-slate-200">
                         <Icon icon="bx:search-alt" class="text-xl" />
                     </button>
-                </li> -->
+                </li>
             </ul>
             <div class="flex space-x-5 items-center lg:hidden">
                 <div class="flex lg:hidden">
                     <!-- MODAL CLOSER -->
                     <div v-on:click="closeSearchModal()" v-bind:class="{'opacity-0 z-30 invisible': !showModal, 'z-40 opacity-100': showModal}" class="transition-all duration-300 w-full h-screen bg-black bg-opacity-50 fixed top-0 left-0 p-4"></div>
                     <!-- MODAL CONTENT -->
-                    <div v-bind:class="{'opacity-0 z-40 invisible': !showModal, 'translate-y-5 md:translate-y-10 opacity-100 z-50': showModal}" class="w-full transform transition-all duration-300 md:max-w-xl mx- fixed top-0 left-0 px-4">
+                    <div v-bind:class="{'opacity-0 z-40 invisible': !showModal, 'translate-y-5 md:translate-y-10 opacity-100 z-50': showModal}" class="w-full transition-all duration-300 md:max-w-xl fixed top-0 left-1/2 transform -translate-x-1/2 px-4">
                         <div class="w-full bg-white p-4 rounded-md">
 
                         </div>
