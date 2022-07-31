@@ -108,6 +108,7 @@ module.exports = {
       72: '18rem',
       80: '20rem',
       96: '24rem',
+      "custom-header": '40rem',
     },
     animation: {
       none: 'none',
