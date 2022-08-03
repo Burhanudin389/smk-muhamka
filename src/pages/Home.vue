@@ -8,27 +8,21 @@
                 <router-link to="/" class="flex justify-center items-center w-40 h-12 rounded-md transition-all duration-300 bg-slate-300 hover:bg-slate-400 mt-5">Tentang kami</router-link>
             </div>
             <div class="w-full h-full md:w-8/12 absolute right-0 top-0 p-4 md:p-0">
-                <swiper 
-                    :modules="modules"
-                    :loop="true"
-                    :pagination="{ clickable: true }"
-                    :autoplay="{ delay: 3500, disableOnInteraction: false }">
-                    <swiper-slide>
-                        <div class="w-full h-full">
-                            <img src="@/assets/slide-1.png" class="w-full h-full object-cover rounded-lg md:rounded-none" alt="">
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <div class="w-full h-full">
-                            <img src="@/assets/banner-example.png" class="w-full h-full object-cover rounded-lg md:rounded-none" alt="">
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <div class="w-full h-full">
-                            <img src="@/assets/banner-example.png" class="w-full h-full object-cover rounded-lg md:rounded-none" alt="">
-                        </div>
-                    </swiper-slide>
-                </swiper>
+                <div class="overflow-hidden" style="max-height: 665px;">
+                    <Carousel :autoplay="3000" :wrap-around="true">
+                        <Slide v-for="item in this.slides" v-bind:key="item">
+                            <div class="w-full h-full">
+                                <div v-for="(image, index) in item.image" v-bind:key="index">
+                                    <img :src="image" class="w-full h-screen object-cover" />
+                                </div>
+                            </div>
+                        </Slide>
+
+                        <template #addons>
+                            <Pagination />
+                        </template>
+                    </Carousel>
+                </div>
             </div>
         </div>
     </header>
@@ -39,21 +33,36 @@
 </template>
 
 <script>
-    import SwiperClass, { Pagination } from 'swiper'
-    import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
-
-    import 'swiper/css'
-    import 'swiper/css/pagination'
+    import { Carousel,  Pagination, Slide } from 'vue3-carousel';
+    import 'vue3-carousel/dist/carousel.css';
 
     export default {
         components: {
-            Swiper,
-            SwiperSlide
+            Carousel,
+            Slide,
+            Pagination,
         },
-        setup() {
+        data() {
             return {
-                modules: [
-                    Pagination
+                slides : [
+                    {
+                        id : 1,
+                        image: [
+                            require("@/assets/slide-1.png"),
+                        ],
+                    },
+                    {
+                        id : 2,
+                        image: [
+                            require("@/assets/banner-example.png"),
+                        ],
+                    },
+                    {
+                        id : 3,
+                        image: [
+                            require("@/assets/banner-example.png"),
+                        ],
+                    },
                 ]
             }
         },
