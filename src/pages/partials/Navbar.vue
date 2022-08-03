@@ -88,19 +88,13 @@
                 <li id="menu-item" v-on:click="closeNavbar()" class="p-2 lg:p-0 hover:bg-green-100 lg:hover:bg-transparent rounded-md">
                     <router-link :class="{ 'text-green-900' : active }" to="/about" class="flex items-start">
                         <Icon icon="flat-color-icons:news" class="text-xl mr-2 lg:hidden" />
-                        <span class="text-sm">Artikel</span>
+                        <span class="text-sm">Berita</span>
                     </router-link>
                 </li>
                 <li id="menu-item" v-on:click="closeNavbar()" class="p-2 lg:p-0 hover:bg-green-100 lg:hover:bg-transparent rounded-md">
                     <router-link :class="{ 'text-green-900' : active }" to="/about" class="flex items-start">
                         <Icon icon="flat-color-icons:gallery" class="text-xl mr-2 lg:hidden" />
                         <span class="text-sm">Galeri</span>
-                    </router-link>
-                </li>
-                <li id="menu-item" v-on:click="closeNavbar()" class="p-2 lg:p-0 hover:bg-green-100 lg:hover:bg-transparent rounded-md">
-                    <router-link :class="{ 'text-green-900' : active }" to="/about" class="flex items-start">
-                        <Icon icon="icon-park:handbag" class="text-xl mr-2 lg:hidden" />
-                        <span class="text-sm">Lowongan</span>
                     </router-link>
                 </li>
                 <li id="menu-item" v-on:click="closeNavbar()" class="p-2 lg:p-0 hover:bg-green-100 lg:hover:bg-transparent rounded-md">

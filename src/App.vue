@@ -11,8 +11,8 @@
 </template>
 
 <script>
-    import Navbar from "@/partials/Navbar.vue";
-    import Footer from "@/partials/Footer.vue";
+    import Navbar from "@/pages/partials/Navbar.vue";
+    import Footer from "@/pages/partials/Footer.vue";
 
     export default {
         components: {

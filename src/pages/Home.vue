@@ -8,7 +8,7 @@
                 <router-link to="/" class="flex justify-center items-center w-40 h-12 rounded-md transition-all duration-300 bg-slate-300 hover:bg-slate-400 mt-5">Tentang kami</router-link>
             </div>
             <div class="w-full h-full md:w-8/12 absolute right-0 top-0 p-4 md:p-0">
-                <div class="overflow-hidden" style="max-height: 665px;">
+                <div class="overflow-hidden rounded-lg md:rounded-none" style="max-height: 600px;">
                     <Carousel :autoplay="3000" :wrap-around="true">
                         <Slide v-for="item in this.slides" v-bind:key="item">
                             <div class="w-full h-full">
@@ -33,14 +33,13 @@
 </template>
 
 <script>
-    import { Carousel,  Pagination, Slide } from 'vue3-carousel';
+    import { Carousel, Slide } from 'vue3-carousel';
     import 'vue3-carousel/dist/carousel.css';
 
     export default {
         components: {
             Carousel,
             Slide,
-            Pagination,
         },
         data() {
             return {
